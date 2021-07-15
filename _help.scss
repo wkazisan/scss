@@ -1,0 +1,36 @@
+@mixin box {
+    height: auto;
+    flex-basis: 48%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+
+    text: {
+        align: center;
+    }
+
+    font: {
+        family: verdana, sans-serif;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@mixin container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+@mixin responsive {
+    flex-basis: 98%;
+}
+
+@mixin full {
+    flex-flow: column wrap;
+}
